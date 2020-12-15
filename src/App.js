@@ -2,8 +2,8 @@ import { Component, createContext, useContext, useState } from 'react'
 import logo from './logo.svg'
 import './App.css'
 
-const ThemeContext = createContext('light')
-const LanguageContext = createContext({ language: 'pl', setLanguage: () => {} })
+const ThemeContext = createContext()
+const LanguageContext = createContext()
 
 function LanguageProvider({ children }) {
   const [language, setLanguage] = useState('en')
